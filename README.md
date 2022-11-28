@@ -16,4 +16,12 @@ Desktop version. Even though the content of the website is just simulated, I dec
 
 ##### ✅ Finished: 28/11/2022
 
+&nbsp;
+
+**— Exercise 2**
+
+Add media queries for tablet view.
+
+##### ✅ Finished: 28/11/2022
+
 ---

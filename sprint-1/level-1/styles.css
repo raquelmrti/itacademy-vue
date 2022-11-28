@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -96,4 +100,17 @@ aside > .content:first-child {
 
 footer > .content {
   background-color: rgb(255, 202, 123);
+}
+
+/* ------------------------- MEDIA QUERIES ------------------------ */
+
+@media only screen and (max-width: 880px) {
+  .main-wrapper {
+    flex-direction: column;
+    background-color: rgb(255, 241, 113);
+  }
+
+  main {
+    width: 100%;
+  }
 }
