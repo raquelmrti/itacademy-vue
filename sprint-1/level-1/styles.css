@@ -114,3 +114,18 @@ footer > .content {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 430px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav > .content:nth-child(1),
+  nav > .content:nth-child(3) {
+    width: 100%;
+  }
+
+  main > article {
+    width: 100%;
+  }
+}
