@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  height: 1em;
+}
+
+header,
+.main-wrapper,
+footer {
+  background-color: black;
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+nav,
+.hero,
+main,
+aside {
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+  background-color: rgb(73, 66, 136);
+}
+
+nav > .content {
+  background-color: rgb(255, 83, 83);
+}
+
+nav > .content:nth-child(1),
+nav > .content:nth-child(3) {
+  width: 15%;
+}
+
+nav > .content:nth-child(2) {
+  flex-grow: 1;
+}
+
+.hero {
+  background-color: rgb(255, 124, 92);
+}
+
+.hero > .content {
+  background-color: rgb(255, 202, 123);
+}
+
+.main-wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 70%;
+  background-color: rgb(89, 79, 180);
+}
+
+main > article {
+  width: 40%;
+  flex-grow: 1;
+  background-color: rgb(177, 135, 216);
+}
+
+main > .content:last-child {
+  width: 100%;
+  background-color: rgb(215, 190, 255);
+}
+
+aside {
+  flex-grow: 1;
+  background-color: rgb(255, 92, 119);
+}
+
+aside > .content {
+  background-color: rgb(255, 211, 182);
+}
+
+aside > .content:first-child {
+  margin-bottom: 0.5em;
+}
+
+footer > .content {
+  background-color: rgb(255, 202, 123);
+}
