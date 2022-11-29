@@ -28,4 +28,14 @@ Add media queries for mobile view.
 
 ##### ✅ Finished: 28/11/2022
 
+· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+
+### ⭐ **Level 2** ⭐
+
+**— Exercise 4**
+
+Add content to the header.
+
+##### ✅ Finished: 29/11/2022
+
 ---
