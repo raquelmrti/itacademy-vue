@@ -41,6 +41,7 @@ Add content and style the header.
 **— Exercise 5**
 
 Add content and style the rest of the page.
+
 ✏️**Notes:**
 
 - I had to change the media query for the mobile view so it would activate earlier, because the layout was getting too squished before it'd switch to mobile view and it was hard making it look right.
