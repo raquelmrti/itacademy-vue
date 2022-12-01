@@ -49,4 +49,12 @@ Add content and style the rest of the page.
 
 ##### ✅ Finished: 01/12/2022
 
----
+· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+
+### ⭐⭐⭐ **Level 3** ⭐⭐⭐
+
+**— Exercise 6**
+
+Add animation to logo and tagline.
+
+##### ✅ Finished: 01/12/2022

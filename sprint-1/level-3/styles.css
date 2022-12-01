@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  height: 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+}
+
+nav,
+.hero,
+main,
+aside {
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+}
+
+nav li {
+  padding: 0.5em;
+  list-style: none;
+}
+
+nav li:hover {
+  color: #898584;
+  background-color: #e9e5e3;
+  border-radius: 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6d6d6d;
+}
+
+.nav-logo,
+.nav-socials {
+  width: 5%;
+}
+
+.nav-logo {
+  min-width: fit-content;
+}
+
+.nav-logo img {
+  height: 3.5em;
+  position: relative;
+  animation: fade-in-downwards 1s;
+}
+
+.nav-logo img:hover {
+  opacity: 0.7;
+}
+
+.nav-links {
+  flex-grow: 1;
+}
+
+.nav-links i {
+  margin-right: 0.5em;
+}
+
+.nav-socials {
+  min-width: max-content;
+}
+
+.nav-logo img,
+.nav-logo img:hover,
+nav li,
+nav li:hover {
+  transition: 0.2s;
+}
+
+.hero {
+  height: 250px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-tagline {
+  background-color: #6161612a;
+  color: #ff7171b7;
+  position: absolute;
+  width: 90%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 1em 2em 1em;
+}
+
+.hero-tagline h1 {
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  animation: blur-fade-in 1s;
+}
+
+.main-wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+main,
+aside {
+  background-color: #dbdbdb;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 70%;
+}
+
+article {
+  width: 40%;
+  flex-grow: 1;
+  padding: 0.8em;
+  background-color: #fff;
+}
+
+.article-img-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-img {
+  width: 100%;
+}
+
+.article-date {
+  margin: -1.2em 0 0.2em 0.2em;
+  color: #fff490;
+}
+
+.article-title {
+  padding: 0.5em 0.2em 0.2em 0.2em;
+  margin-top: 0.1em;
+  font-family: monospace;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff1f1;
+  background-color: #ff9797;
+}
+
+.article-content p {
+  columns: 2;
+  column-width: 150px;
+}
+
+.article-content a {
+  color: #898584;
+  text-decoration: none;
+}
+
+.article-content a:hover {
+  color: #afabaa;
+}
+
+.under-articles {
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+aside {
+  width: 30%;
+  text-align: center;
+}
+
+aside h2 {
+  margin-block-start: 0.5em;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+  font-size: small;
+  border-right: 15px solid #dbdbdb;
+  border-left: 15px solid #dbdbdb;
+  background-color: #f0eeee;
+}
+
+/* ------------------------- MEDIA QUERIES ------------------------ */
+
+@media only screen and (max-width: 880px) {
+  nav {
+    font-size: 0.8em;
+  }
+
+  .hero {
+    height: 200px;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  main,
+  aside {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  header {
+    background-position-x: 50%;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  nav li {
+    width: min-content;
+  }
+
+  nav i {
+    font-size: 1.3em;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+
+  .nav-links i {
+    margin-right: 0;
+  }
+
+  .hero {
+    height: 150px;
+  }
+
+  .tagline {
+    padding-top: 0.5em;
+  }
+
+  main > article {
+    width: 100%;
+  }
+}
+
+/* --------------------------- ANIMATION -------------------------- */
+
+@keyframes fade-in-downwards {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes blur-fade-in {
+  from {
+    color: transparent;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #ff7171b7;
+  }
+  to {
+    font-size: 1.5em;
+  }
+}
