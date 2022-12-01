@@ -40,8 +40,12 @@ Add content and style the header.
 
 **— Exercise 5**
 
-Add content and style the rest of the page. I had to change the media query for the mobile view so it would activate earlier, because the layout was getting too squished before it'd switch to mobile view and it was hard making it look right.
+Add content and style the rest of the page.
+✏️**Notes:**
 
-##### ✅ Finished: 30/11/2022
+- I had to change the media query for the mobile view so it would activate earlier, because the layout was getting too squished before it'd switch to mobile view and it was hard making it look right.
+- I also had to change the sidebar's width. At first I didn't give it any width and just made it have `flex-grow: 1` so it'd take up all the remaining space, which was fine while the sidebar had no content, but when I added text it expanded and made the `main` element shrink. So I had to give it a width of 30%.
+
+##### ✅ Finished: 01/12/2022
 
 ---
