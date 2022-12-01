@@ -41,14 +41,9 @@ Add content and style the header.
 **— Exercise 5**
 
 Add content and style the rest of the page.
-<<<<<<< HEAD
 
 ✏️**Notes:**
 
-=======
-✏️**Notes:**
-
->>>>>>> 211df5da2b863faf8468a9d3a9fbe3b118b8ae9f
 - I had to change the media query for the mobile view so it would activate earlier, because the layout was getting too squished before it'd switch to mobile view and it was hard making it look right.
 - I also had to change the sidebar's width. At first I didn't give it any width and just made it have `flex-grow: 1` so it'd take up all the remaining space, which was fine while the sidebar had no content, but when I added text it expanded and made the `main` element shrink. So I had to give it a width of 30%.
 
