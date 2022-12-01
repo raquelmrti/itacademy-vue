@@ -30,12 +30,18 @@ Add media queries for mobile view.
 
 · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
 
-### ⭐ **Level 2** ⭐
+### ⭐⭐ **Level 2** ⭐⭐
 
 **— Exercise 4**
 
-Add content to the header.
+Add content and style the header.
 
 ##### ✅ Finished: 29/11/2022
+
+**— Exercise 5**
+
+Add content and style the rest of the page. I had to change the media query for the mobile view so it would activate earlier, because the layout was getting too squished before it'd switch to mobile view and it was hard making it look right.
+
+##### ✅ Finished: 30/11/2022
 
 ---

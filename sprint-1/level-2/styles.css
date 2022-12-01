@@ -79,6 +79,10 @@ nav a {
   height: 3.5em;
 }
 
+.logo img:hover {
+  opacity: 0.7;
+}
+
 .nav-links {
   flex-grow: 1;
 }
@@ -121,40 +125,85 @@ nav a {
   gap: 1em;
 }
 
+main,
+aside {
+  background-color: #dbdbdb;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   width: 70%;
-  background-color: #594fb4;
 }
 
-main > article {
+article {
   width: 40%;
   flex-grow: 1;
-  background-color: #b187d8;
+  padding: 0.8em;
+  background-color: #fff;
 }
 
-main > .content:last-child {
+.article-img-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-img {
   width: 100%;
-  background-color: #d7beff;
+}
+
+.article-date {
+  margin: -1.2em 0 0.2em 0.2em;
+  color: #fff490;
+}
+
+.article-title {
+  padding: 0.5em 0.2em 0.2em 0.2em;
+  margin-top: 0.1em;
+  font-family: monospace;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff1f1;
+  background-color: #ff9797;
+}
+
+.article-content p {
+  columns: 2;
+  column-width: 150px;
+}
+
+.article-content a {
+  color: #898584;
+  text-decoration: none;
+}
+
+.article-content a:hover {
+  color: #afabaa;
+}
+
+.under-articles {
+  text-align: center;
+  margin-bottom: 0.2em;
 }
 
 aside {
-  flex-grow: 1;
-  background-color: #ff5c77;
+  width: 30%;
+  text-align: center;
 }
 
-aside > .content {
-  background-color: #ffd3b6;
+aside h2 {
+  margin-block-start: 0.5em;
 }
 
-aside > .content:first-child {
-  margin-bottom: 0.5em;
-}
-
-footer > .content {
-  background-color: #ffca7b;
+footer {
+  background-color: #f0eeee;
+  padding: 1em;
+  text-align: center;
+  font-size: small;
+  border-right: 15px solid #dbdbdb;
+  border-left: 15px solid #dbdbdb;
 }
 
 /* ------------------------- MEDIA QUERIES ------------------------ */
@@ -172,12 +221,13 @@ footer > .content {
     flex-direction: column;
   }
 
-  main {
+  main,
+  aside {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 565px) {
   header {
     background-position-x: 50%;
     background-position-y: 15px;
