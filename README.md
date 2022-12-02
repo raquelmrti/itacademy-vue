@@ -58,3 +58,9 @@ Add content and style the rest of the page.
 Add animation to logo and tagline.
 
 ##### ✅ Finished: 01/12/2022
+
+**— Exercise 7**
+
+Adapt the layout to grid. I decided to leave the navbar as a flexbox element due to the fact that it's one-dimensional, and I believe there'd be no benefit to using grid.
+
+##### ✅ Finished: 01/12/2022
