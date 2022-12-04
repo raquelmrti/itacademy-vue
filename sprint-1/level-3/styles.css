@@ -16,6 +16,8 @@ body {
   gap: 1em;
   max-width: 1200px;
   margin: 0 auto;
+  align-content: center;
+  justify-content: center;
 }
 
 .content {
@@ -233,11 +235,6 @@ footer {
       "aside"
       "footer";
   }
-
-  main,
-  aside {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 565px) {
@@ -276,11 +273,7 @@ footer {
   }
 
   main {
-    grid-template-columns: 100%;
-  }
-
-  main > article {
-    width: 100%;
+    grid-template-columns: initial;
   }
 
   .under-articles {
