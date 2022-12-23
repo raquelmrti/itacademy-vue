@@ -1,0 +1,22 @@
+{
+  "name": "itacademy-vue",
+  "version": "1.0.0",
+  "description": "My sprints for IT Academy's Vue course. As I work through the exercises, I will document my progress in this page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raquelmrti/itacademy-vue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raquelmrti/itacademy-vue/issues"
+  },
+  "homepage": "https://github.com/raquelmrti/itacademy-vue#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

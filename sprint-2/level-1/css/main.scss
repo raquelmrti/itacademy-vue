@@ -1,0 +1,95 @@
+// change theme colors
+$primary: #5265e1;
+$secondary: #fa5959;
+
+// add new position values for the blue shape
+$position-values: (
+  60: 60%,
+  130: 130%,
+);
+
+// add a new width value for the blue shape
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "width"), "values"),
+              (
+                200: 200%,
+              )
+            ),
+        )
+      ),
+  )
+);
+
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+//change the font
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+$font-family-sans-serif: "Rubik", system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+
+// custom css
+body {
+  overflow-x: hidden;
+}
+
+.btn,
+.navbar-nav {
+  font-size: small !important;
+}
+
+.navbar {
+  max-width: 1320px;
+
+  & .navbar-nav {
+    letter-spacing: 1px;
+  }
+}
+
+.badge {
+  z-index: -1;
+  // width: 200%;
+}
+
+// media queries
+@media only screen and (max-width: 1400px) {
+  .navbar {
+    max-width: 1140px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    max-width: 960px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    max-width: 720px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    max-width: 540px !important;
+  }
+}
+
+//imports
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -4,6 +4,10 @@ My sprints for IT Academy's Vue course. As I work through the exercises, I will 
 
 ---
 
+---
+
+---
+
 ## **Sprint 1**
 
 The first sprint consists in familiarizing yourself with **flexbox** (and **grid**, optionally) by building a blog-like website layout.
@@ -64,3 +68,21 @@ Add animation to logo and tagline.
 Adapt the layout to grid. I decided to leave the navbar as a flexbox element due to the fact that it's one-dimensional, and I believe there'd be no benefit to using grid.
 
 ##### ✅ Finished: 01/12/2022
+
+---
+
+---
+
+---
+
+## **Sprint 2**
+
+This sprint is about building a landing page using **Bootstrap 5**, as well as using **SCSS** (although minimally because you're supposed to use the Bootstrap HTML classes).
+
+### ⭐ **Level 1** ⭐
+
+**— Exercise 1**
+
+Make the header + start of the main content.
+
+##### ✅ Finished: 23/12/2022
