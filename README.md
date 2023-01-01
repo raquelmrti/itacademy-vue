@@ -79,6 +79,9 @@ Adapt the layout to grid. I decided to leave the navbar as a flexbox element due
 
 This sprint is about building a landing page using **Bootstrap 5**, as well as using **SCSS** (although minimally because you're supposed to use the Bootstrap HTML classes).
 
+<details>
+<summary>Log</summary>
+
 ### ⭐ **Level 1** ⭐
 
 **— Exercise 1**
@@ -86,3 +89,11 @@ This sprint is about building a landing page using **Bootstrap 5**, as well as u
 Make the header + start of the main content.
 
 ##### ✅ Finished: 23/12/2022
+
+**— Exercise 2**
+
+Make the features section. The truth is I struggled a lot with this part, as I found customizing bootstrap components very troublesome at times. But in the end I think I did a decent job!
+
+##### ✅ Finished: 28/12/2022
+
+</details>
