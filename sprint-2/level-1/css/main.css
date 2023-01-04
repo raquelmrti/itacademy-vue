@@ -16,6 +16,10 @@ body {
   letter-spacing: 1px;
 }
 
+main .shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(82, 101, 225, 0.2117647059) !important;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .hero-img {
     max-width: initial !important;
@@ -52,6 +56,20 @@ body {
 .nav .nav-item .nav-link:hover {
   border: 1px solid transparent;
   transition: none;
+}
+
+.card {
+  max-width: 300px;
+}
+.card hr {
+  opacity: 1;
+  border-top: none;
+  height: 4px;
+  margin: -16px;
+  background-image: url("../../img/bg-dots.svg");
+}
+.card.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(82, 101, 225, 0.1098039216) !important;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -7472,6 +7490,10 @@ textarea.form-control-lg {
 
 .w-auto {
   width: auto !important;
+}
+
+.w-35 {
+  width: 35% !important;
 }
 
 .w-200 {

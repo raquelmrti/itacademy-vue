@@ -2,7 +2,7 @@
 $primary: #5265e1;
 $secondary: #fa5959;
 
-// add new position values for the blue shapes
+// add new position values
 $position-values: (
   m20: -20%,
   60: 60%,
@@ -10,7 +10,7 @@ $position-values: (
   130: 130%,
 );
 
-// add a new width and height values for the blue shape
+// add a new width and height values
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/maps";
@@ -28,6 +28,7 @@ $utilities: map-merge(
             map-merge(
               map-get(map-get($utilities, "width"), "values"),
               (
+                35: 35%,
                 200: 200%,
               )
             ),
@@ -74,6 +75,10 @@ body {
   }
 }
 
+main .shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem #5265e136 !important;
+}
+
 .hero-img {
   @media only screen and (min-width: 768px) and (max-width: 992px) {
     max-width: initial !important;
@@ -112,6 +117,22 @@ body {
   &:hover {
     border: 1px solid transparent;
     transition: none;
+  }
+}
+
+.card {
+  max-width: 300px;
+
+  & hr {
+    opacity: 1;
+    border-top: none;
+    height: 4px;
+    margin: -16px;
+    background-image: url("../../img/bg-dots.svg");
+  }
+
+  &.shadow {
+    box-shadow: 0 0.5rem 1rem #5265e11c !important;
   }
 }
 

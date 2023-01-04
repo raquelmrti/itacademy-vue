@@ -4,13 +4,12 @@ My sprints for IT Academy's Vue course. As I work through the exercises, I will 
 
 ---
 
----
-
----
-
 ## **Sprint 1**
 
 The first sprint consists in familiarizing yourself with **flexbox** (and **grid**, optionally) by building a blog-like website layout.
+
+<details>
+<summary>Log</summary>
 
 ### ⭐ **Level 1** ⭐
 
@@ -69,9 +68,7 @@ Adapt the layout to grid. I decided to leave the navbar as a flexbox element due
 
 ##### ✅ Finished: 01/12/2022
 
----
-
----
+</details>
 
 ---
 
@@ -94,6 +91,14 @@ Make the header + start of the main content.
 
 Make the features section. The truth is I struggled a lot with this part, as I found customizing bootstrap components very troublesome at times. But in the end I think I did a decent job!
 
+Also, I found out this exercise is a challenge from Frontend Mentor, so I took some missing text content from there (the text for the Speedy Searching and Easy Sharing tabs.)
+
 ##### ✅ Finished: 28/12/2022
+
+**— Exercise 3**
+
+Make the download section.
+
+##### ✅ Finished: 03/01/2023
 
 </details>
