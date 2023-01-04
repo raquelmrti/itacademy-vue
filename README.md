@@ -101,4 +101,10 @@ Make the download section.
 
 ##### ✅ Finished: 03/01/2023
 
+**— Exercise 4**
+
+Make the FAQ section.
+
+##### ✅ Finished: 04/01/2023
+
 </details>

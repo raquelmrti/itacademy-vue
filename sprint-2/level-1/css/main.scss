@@ -136,6 +136,17 @@ main .shadow-sm {
   }
 }
 
+.accordion-item {
+  .accordion-button::after,
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(../../img/icon-arrow.svg);
+  }
+
+  .accordion-button::after {
+    background-position-y: 5px;
+  }
+}
+
 // media queries
 @media only screen and (max-width: 1400px) {
   .navbar {

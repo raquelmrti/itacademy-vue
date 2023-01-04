@@ -72,6 +72,14 @@ main .shadow-sm {
   box-shadow: 0 0.5rem 1rem rgba(82, 101, 225, 0.1098039216) !important;
 }
 
+.accordion-item .accordion-button::after,
+.accordion-item .accordion-button:not(.collapsed)::after {
+  background-image: url(../../img/icon-arrow.svg);
+}
+.accordion-item .accordion-button::after {
+  background-position-y: 5px;
+}
+
 @media only screen and (max-width: 1400px) {
   .navbar {
     max-width: 1140px !important;
