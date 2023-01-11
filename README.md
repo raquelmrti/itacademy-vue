@@ -74,7 +74,7 @@ Adapt the layout to grid. I decided to leave the navbar as a flexbox element due
 
 ## **Sprint 2**
 
-This sprint is about building a landing page using **Bootstrap 5**, as well as using **SCSS** (although minimally because you're supposed to use the Bootstrap HTML classes).
+This sprint is about building a landing page using **Bootstrap 5**, as well as using **SCSS** (although minimally because you're supposed to use the Bootstrap HTML classes.)
 
 <details>
 <summary>Log</summary>
@@ -106,5 +106,19 @@ Make the download section.
 Make the FAQ section.
 
 ##### ✅ Finished: 04/01/2023
+
+· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+
+### ⭐⭐ **Level 2** ⭐⭐
+
+**— Exercise 5**
+
+Make the footer and form with Bootstrap validation.
+
+✏️**Notes:**
+
+- Before starting Level 2, I decided to divide my SCSS into partial files in order to try the module system. It helps organizing your SCSS! I've read that [doing `@import` is outdated and it's been replaced with `@use`](https://stefaniefluin.medium.com/the-new-sass-module-system-out-with-import-in-with-use-e1bd8ba032d0), but I've also read that Bootstrap doesn't support `@use`. I'm unsure whether that has changed yet or not, I have to look into it.
+
+##### ✅ Finished: 11/01/2023
 
 </details>
