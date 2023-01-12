@@ -1,0 +1,195 @@
+//styles for every component necessary for the project, including buttons, modals, etc.
+
+section {
+  .btn-primary:hover,
+  .btn-light:hover {
+    background-color: #fff;
+  }
+
+  .btn-primary:hover {
+    color: $primary;
+  }
+
+  .btn-light:hover {
+    border: 1px solid $gray-700;
+  }
+}
+
+/* ---------------------------- NAVBAR ---------------------------- */
+
+.btn,
+.navbar-nav {
+  font-size: small !important;
+}
+
+.navbar {
+  max-width: 1320px;
+
+  .navbar-nav {
+    letter-spacing: 1px;
+    @include secondary-btn();
+  }
+
+  .nav-link {
+    color: $body-color;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    max-width: 1140px !important;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 960px !important;
+  }
+
+  @media only screen and (max-width: 992px) {
+    max-width: 720px !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 540px !important;
+  }
+}
+
+/* ----------------------------- HERO ----------------------------- */
+
+.hero-img {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    max-width: initial !important;
+    width: 110%;
+  }
+}
+
+.badge {
+  z-index: -1;
+}
+
+/* ------------------------- FEATURES TABS ------------------------ */
+
+.nav {
+  .nav-item {
+    @media only screen and (max-width: 768px) {
+      border-top: 1px solid $gray-300;
+    }
+
+    .nav-link {
+      width: 200px;
+      color: $gray-600;
+
+      &:hover {
+        border: 1px solid transparent;
+        color: $secondary;
+      }
+
+      &.active,
+      &.active:hover {
+        border: 1px solid transparent;
+        border-bottom: 4px solid $secondary;
+      }
+    }
+  }
+}
+
+/* ------------------------ DOWNLOAD CARDS ------------------------ */
+
+.card {
+  max-width: 300px;
+
+  & hr {
+    opacity: 1;
+    border-top: none;
+    height: 4px;
+    margin: -16px;
+    background-image: url("../../img/bg-dots.svg");
+  }
+
+  &.shadow {
+    box-shadow: 0 0.5rem 1rem #5265e11c !important;
+  }
+}
+
+/* ------------------------- FAQ ACCORDION ------------------------ */
+
+.accordion-item {
+  .accordion-button {
+    &:hover {
+      color: $secondary;
+    }
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    &::after {
+      background-image: url(../../img/icon-arrow.svg);
+      background-position-y: 5px;
+    }
+
+    &:not(.collapsed) {
+      background-color: #fff;
+      color: $body-color;
+      box-shadow: none;
+
+      &::after {
+        background-image: url(../../img/icon-arrow-uncollapsed.svg);
+      }
+    }
+  }
+  .accordion-body {
+    color: $gray-600;
+    line-height: 1.8em;
+  }
+}
+
+/* ------------------------ FORM ----------------------- */
+
+form {
+  @include secondary-btn();
+
+  input {
+    z-index: 10;
+  }
+
+  &.was-validated {
+    .form-control:invalid,
+    .form-control.is-invalid {
+      background-image: url("../../img/icon-error.svg");
+      border-color: #fb5859;
+    }
+  }
+
+  .invalid-feedback {
+    background-color: #fb5859;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    font-size: 0.7em;
+    letter-spacing: 0.5px;
+    padding-top: 0.5em;
+    margin-top: -5.3px;
+  }
+
+  .btn {
+    min-width: fit-content;
+    height: 38px;
+  }
+
+  .btn-check:checked + .btn,
+  :not(.btn-check) + .btn:active,
+  .btn:first-child:active,
+  .btn.active,
+  .btn.show {
+    background-color: #ffe0e0;
+    color: $secondary;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .email-input-wrapper {
+      width: 75%;
+    }
+  }
+}

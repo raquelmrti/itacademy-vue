@@ -121,4 +121,22 @@ Make the footer and form with Bootstrap validation.
 
 ##### ✅ Finished: 11/01/2023
 
+· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+
+### ⭐⭐⭐ **Level 3** ⭐⭐⭐
+
+**— Exercise 6**
+
+Modify the hover state of multiple elements across the page, and stylize the invalid feedback message in the email form.
+
+✏️**Notes:**
+
+- Before this exercise, I had been using the Bootstrap classes `text-black` and `text-white` to change the color of some links in the HTML, but I discovered that made me unable to modify the color on hover. So I got rid of those classes and established the text color in the CSS instead.
+
+- I made a mixin for the login button and the contact button because they have the same styling, but are nested under different parents, so if I wanted to target both of them at once it was going to disorganize my code.
+
+- For the social icons in the footer, I swapped the `img` tag to `svg`. This way I was able to modify the `fill` property on hover.
+
+##### ✅ Finished: 12/01/2023
+
 </details>

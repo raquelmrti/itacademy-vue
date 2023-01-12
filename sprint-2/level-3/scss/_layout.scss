@@ -1,0 +1,53 @@
+//styles for the header, footer, the grid system, etc.
+
+body {
+  overflow-x: hidden;
+}
+
+main .shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem #5265e136 !important;
+}
+
+section {
+  margin-top: 8em;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 7em;
+
+    h1,
+    .h1 {
+      font-size: calc(1.7rem + 1.8vw);
+    }
+
+    h2,
+    .h2 {
+      font-size: calc(1.7rem + 0.9vw);
+    }
+  }
+}
+
+footer {
+  h6 {
+    font-size: small;
+    letter-spacing: 3px;
+  }
+
+  .footer-nav {
+    background-color: #242946;
+
+    .nav-item {
+      svg {
+        fill: #fff;
+        transition: 0.15s ease-in-out;
+
+        &:hover {
+          fill: $secondary;
+        }
+      }
+    }
+
+    .nav-link {
+      color: #fff;
+    }
+  }
+}
