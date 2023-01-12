@@ -139,4 +139,10 @@ Modify the hover state of multiple elements across the page, and stylize the inv
 
 ##### ✅ Finished: 12/01/2023
 
+**— Exercise 7**
+
+Position the cards in the download section with the `nth-child` pseudo-class. Initially I had positioned them with the Bootstrap `mt` classes.
+
+##### ✅ Finished: 12/01/2023
+
 </details>

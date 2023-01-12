@@ -110,7 +110,7 @@ section {
   .card {
     max-width: 300px;
 
-    & hr {
+    hr {
       opacity: 1;
       border-top: none;
       height: 4px;
@@ -171,12 +171,12 @@ form {
     .form-control:invalid,
     .form-control.is-invalid {
       background-image: url("../../img/icon-error.svg");
-      border-color: #fb5859;
+      border-color: $secondary;
     }
   }
 
   .invalid-feedback {
-    background-color: #fb5859;
+    background-color: $secondary;
     color: #fff;
     border-radius: 0 0 5px 5px;
     font-size: 0.7em;
