@@ -96,19 +96,31 @@ section {
 
 /* ------------------------ DOWNLOAD CARDS ------------------------ */
 
-.card {
-  max-width: 300px;
+.cards-container {
+  @media only screen and (min-width: 992px) {
+    .card-wrapper:nth-child(2) {
+      margin-top: 2em;
+    }
 
-  & hr {
-    opacity: 1;
-    border-top: none;
-    height: 4px;
-    margin: -16px;
-    background-image: url("../../img/bg-dots.svg");
+    .card-wrapper:nth-child(3) {
+      margin-top: 3.8em;
+    }
   }
 
-  &.shadow {
-    box-shadow: 0 0.5rem 1rem #5265e11c !important;
+  .card {
+    max-width: 300px;
+
+    & hr {
+      opacity: 1;
+      border-top: none;
+      height: 4px;
+      margin: -16px;
+      background-image: url("../../img/bg-dots.svg");
+    }
+
+    &.shadow {
+      box-shadow: 0 0.5rem 1rem #5265e11c !important;
+    }
   }
 }
 
